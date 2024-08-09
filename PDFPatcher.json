@@ -1,0 +1,27 @@
+{
+    "version": "1.0.0",
+    "description": "Gendloop's app",
+    "homepage": "https://github.com/gendloop/PDFPatcher",
+    "license": "LGPL-2.1-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/gendloop/PDFPatcher/releases/download/v1.0.0/PDFPatcher-$version-win64.7z",
+            "hash": ""
+        }
+    },
+    "bin": "PDFPatcher.exe",
+    "shortcuts": [
+        [
+            "PDFPatcher.exe",
+            "PDFPatcher"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/gendloop/PDFPatcher/releases/download/v$version/PDFPatcher-$version-win64.7z"
+            }
+        }
+    }
+}
